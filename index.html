@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Templates/css/bootstrap.css" />
+    <link rel="stylesheet" href="/Templates/css/main.css" />
+    <link rel="stylesheet" href="/Templates/css/update.css" />
+    <link rel="stylesheet" href="/css//index.css">
+    
+    <script src="/Scripts/jquery.cookie.js"></script>
+    <script src="/Scripts/jquery.validate.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon-acbs.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109671357-1"></script>
+
+</head>
+
+<body>
+    <header class="border-bottom main-nav-wrap">
+        <div class="container">
+            <div class="d-flex justify-content-between justify-content-lg-start main-nav">
+                <div class="main-logo-bg">
+                    <a href="/" class="d-flex align-items-center text-dark text-decoration-none main-logo">
+                        <img src="/Templates/img/logo-1.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <ul class="nav ps-4 col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 d-none d-lg-flex"
+                    id="main-menu">
+                    <li class="nav-item d-flex has-dropdown"><a href="#"
+                            class="nav-link px-2 link-dark-blue d-flex align-items-center text-uppercase">ACBS<svg
+                                xmlns="http://www.w3.org/2000/svg" class="icon size-16 ms-1" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+                        <div class="main-nav-mega-wrap">
+                            <div class="main-nav-mega container">
+                                <div class="row">
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Giới thiệu</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/gioi-thieu/tong-quan">Tổng quan</a></li>
+                                                <li><a href="/gioi-thieu/ban-dieu-hanh">Ban điều hành</a></li>
+                                                <li><a href="/gioi-thieu/lich-su-phat-trien">Lịch sử phát triển</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Công bố thông tin</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/cong-bo-thong-tin">Bản tin công bố</a></li>
+                                                <li><a href="/cong-bo-thong-tin/theo-ngay">Danh mục ký quỹ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Tin tức &amp; Sự kiện</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/tin-tuc/thong-bao-tu-acbs">Thông báo từ ACBS</a></li>
+                                                <li><a href="/tin-tuc/tin-doanh-nghiep-niem-yet">Tin doanh nghiệp niêm
+                                                        yết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Hệ thống chi nhánh</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/lien-he">Kết nối với chúng tôi</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex has-dropdown"><a href="#"
+                            class="nav-link px-2 link-dark-blue d-flex align-items-center text-uppercase">SẢN PHẨM &amp;
+                            DỊCH VỤ<svg xmlns="http://www.w3.org/2000/svg" class="icon size-16 ms-1" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+                        <div class="main-nav-mega-wrap">
+                            <div class="main-nav-mega container">
+                                <div class="row">
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Dịch vụ chứng khoán</h3>
+                                            <p> </p>
+                                            <ul>
+                                                <li><a href="/san-pham/ckny/quy-dinh-giao-dich-1074-P708F3CF8">Chứng
+                                                        khoán niêm yết</a></li>
+                                                <li><a href="/san-pham/ckny/chung-chi-quy-mo--etf-1069-PFC2C7C47">Chứng
+                                                        chỉ quỹ mở &amp; ETF</a></li>
+                                                <li><a
+                                                        href="san-pham/ckny/trai-phieu-doanh-nghiep-rieng-le-1198-PC54E7837">Trái
+                                                        phiếu doanh nghiệp</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Tài trợ giao dịch</h3>
+                                            <p> </p>
+                                            <ul>
+                                                <li><a href=" /san-pham/tiht/giao-dich-ky-quy-1107-PE58CC5CA">Giao dịch
+                                                        ký quỹ</a></li>
+                                                <li><a href="/san-pham/tiht/margint+-1108-PB9D487A3">Margin T+</a></li>
+                                                <li><a href="/san-pham/tiht/ung-tien-ngay-t-1109-P8F1D4362">Ứng tiền
+                                                        ngày T</a></li>
+                                                <li><a href="https://acbs.com.vn/san-pham/tiht/margin14-1193-P9A3D4583">Margin
+                                                        T14</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Hỗ trợ và tiện ích</h3>
+                                            <p> </p>
+                                            <ul>
+                                                <li><a href="/san-pham/ttgd/bieu-phi-1120-PC6036A69">Biểu phí</a></li>
+                                                <li><a
+                                                        href="/san-pham/ttgd/giao-dich-chung-khoan-niem-yet-1154-PE8B1CBD0">Hướng
+                                                        dẫn sử dụng</a></li>
+                                                <li><a href="/san-pham/ttgd/huong-dan-nha-dau-tu-moi-1121-P3A15C7D0">Hướng
+                                                        dẫn nhà đầu tư mới</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Sản phẩm định chế</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/khach-hang-dinh-che">Xem thêm</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex has-dropdown"><a href="#"
+                            class="nav-link px-2 link-dark-blue d-flex align-items-center text-uppercase">TRUNG TÂM PHÂN
+                            TÍCH<svg xmlns="http://www.w3.org/2000/svg" class="icon size-16 ms-1" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+                        <div class="main-nav-mega-wrap">
+                            <div class="main-nav-mega container">
+                                <div class="row">
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Báo cáo doanh nghiệp</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/trung-tam-phan-tich/bao-cao-doanh-nghiep">Xem chi tiết</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Báo cáo tổng quan</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/trung-tam-phan-tich/bao-cao-tong-quan">Xem chi tiết</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Báo cáo chứng quyền</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/trung-tam-phan-tich/bao-cao-chung-quyen">Xem chi tiết</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Báo cáo ngày</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/trung-tam-phan-tich/bao-cao-ngay">Xem chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex has-dropdown"><a href="#"
+                            class="nav-link px-2 link-dark-blue d-flex align-items-center text-uppercase">CƠ HỘI NGHỀ
+                            NGHIỆP<svg xmlns="http://www.w3.org/2000/svg" class="icon size-16 ms-1" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+                        <div class="main-nav-mega-wrap">
+                            <div class="main-nav-mega container">
+                                <div class="row">
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Tin tuyển dụng</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/danh-sach-tuyen-dung">Các cơ hội nghề nghiệp</a></li>
+                                                <li><a href="/chuyen-trang-tuyen-dung">Cẩm nang việc làm</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>Blog tuyển dụng</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="/blog-tuyen-dung/moi-truong-lam-viec-acbs">Môi trường làm
+                                                        việc ACBS</a></li>
+                                                <li><a href="/blog-tuyen-dung/goc-thuc-tap-sinh">Góc thực tập sinh</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 megamenu__item">
+                                        <div class="megamenu__item__content">
+                                            <h3>The Next Broker</h3>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="https://thenextbroker.acbs.com.vn">Xem chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="col-12 col-lg-auto mb-3 mb-lg-0 align-self-center d-none d-lg-block">
+                    <a target="_blank" href="https://smart.acbs.com.vn/login"
+                        class="btn btn-sm btn-primary-2 mx-1 Common_Text_8" style="text-decoration:none;">Đăng nhập</a>
+                    <a target="_blank" href="https://s-eyes.acbs.com.vn/"
+                        class="btn btn-sm btn-primary mx-1 Common_Text_9" style="text-decoration:none;">Đăng ký</a>
+                </div>
+                <div class="dropdown text-end ms-4 align-self-center d-lg-block">
+                    <a href="#"
+                        class="d-flex align-items-center link-dark-blue text-decoration-none py-2 px-1 flag-language-active"
+                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"><img
+                            src="/Templates/img/flag/flag-vn.svg" alt="Viet nam" class="" width="22" height="22">
+                        <div class="ms-2 me-1">VN</div> <svg xmlns="http://www.w3.org/2000/svg" class="icon size-16"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu text-small acb-dropdown dropdown-menu-end" aria-labelledby="dropdownUser1"
+                        style="">
+                        <li class="">
+                            <a class="dropdown-item d-flex align-items-center py-1 flag-language flag-language-vn current"
+                                href="#" onclick="changeLang(this, 'VN');">
+                                <img src="/Templates/img/flag/flag-vn.svg" alt="Viet nam" class="" width="22"
+                                    height="22">
+                                <div class="ms-2 me-1 font-sm">Tiếng Việt</div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="dropdown-item d-flex align-items-center py-1 flag-language flag-language-en"
+                                href="#" onclick="changeLang(this, 'EN');">
+                                <img src="/Templates/img/flag/flag-gb.svg" alt="English" class="" width="22"
+                                    height="22">
+                                <div class="ms-2 me-1 font-sm">Tiếng Anh</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="align-self-center d-block d-lg-none">
+                    <button class="hamburger hamburger--squeeze main-menu-hamburger mt-2" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page-heading is-big banner-img"
+        style="background-image: url(&quot;img/phan-tich-chung-khoan-header.jpg&quot;);">
+        <div class="container ">
+            <div class=" justify-content-center">
+                <div class="d-flex justify-content-between">
+                    <div class="col-12 col-lg-4 col-xl-3 pr-3 ">
+                        <div class="news-widget">
+                            <div class="news-widget-title-and-links pb-4">
+
+                                <ul class="relevant-news-list" id="cat-r-mtlv">
+                                    <li class="py-3">
+                                        <div class="news-type"> Vĩ mô </div>
+                                        <a href="/blog-tuyen-dung/chi-tiet/cuoc-thi-the-next-broker-lan-dau-tien-xuat-hien-tai-acbs-1015000030-B8D0D5827"
+                                            class="h5 fw-normal mb-0 text-white reveal  banner-short-desc show link-news ">
+                                            CUỘC THI THE NEXT BROKER LẦN ĐẦU TIÊN XUẤT HIỆN TẠI ACBS </a>
+                                        <div class="news-date"> 01/02/2024 </div>
+                                    </li>
+                                    <li class="py-3">
+                                        <div class="news-type"> Vĩ mô </div>
+                                        <a href="/blog-tuyen-dung/chi-tiet/acbs---thanh-vien-tieu-bieu-trong-hoat-dong-luu-ky-chung-khoan-nam-2023--1015000029-BAC1204FF"
+                                            class="h5 fw-normal mb-0 text-white reveal  banner-short-desc show link-news ">
+                                            ACBS - Thành viên tiêu biểu trong hoạt động lưu ký chứng khoán năm 2023 </a>
+                                        <div class="news-date"> 28/11/2023 </div>
+                                    </li>
+                                    <li class="py-3">
+                                        <div class="news-type"> Vĩ mô </div>
+                                        <a href="/blog-tuyen-dung/chi-tiet/acbs-mui-ne-teambuilding-2023-|-reach-goal---trade-squad-1015000028-B144E2929"
+                                            class="h5 fw-normal mb-0 text-white reveal  banner-short-desc show link-news ">
+                                            ACBS MUI NE TEAMBUILDING 2023 | REACH GOAL - TRADE SQUAD </a>
+                                        <div class="news-date"> 19/07/2023 </div>
+                                    </li>
+                                    <li class="py-3">
+                                        <div class="news-type"> Vĩ mô </div>
+                                        <a href="/blog-tuyen-dung/chi-tiet/acbs-mui-ne-teambuilding-2023-|-reach-goal---trade-squad-1015000028-B144E2929"
+                                            class="h5 fw-normal mb-0 text-white reveal  banner-short-desc show link-news ">
+                                            ACBS MUI NE TEAMBUILDING 2023 | REACH GOAL - TRADE SQUAD </a>
+                                        <div class="news-date"> 19/07/2023 </div>
+                                    </li>
+                                </ul>
+                                <!-- LOAD MORE BUTTON -->
+                                <div class="mt-3 d-flex flex-column justify-content-center">
+                                    <div class="loadmore-cta loadmore-cta--small" style="display: none;">
+                                        <a href="/blog-tuyen-dung/moi-truong-lam-viec-acbs"
+                                            class="h5 fw-normal mb-0 text-white reveal mt-3 banner-short-desc show"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-xl-9 pl-3 p-3">
+                        <div class=" layout-news-outstanding row">
+                            <div class="col-12 col-lg-7 col-xl-8">
+                                <img src="img/bat-dong-san.jpg" alt="" class="img-news-outstanding ">
+                            </div>
+                            <div class="col-12 col-lg-5 col-xl-4">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-primary h5 fw-bold"> Bất động sản</div>
+                                    <div class="dd"><a href="#">Xem thêm</a></div>
+                                </div>
+                                <div class="news-widget">
+                                    <div class="news-widget-title-and-links pb-4">
+
+                                        <ul class="relevant-news-list" id="cat-r-mtlv">
+                                            <li class="py-3 "> <a
+                                                    href="/blog-tuyen-dung/chi-tiet/cuoc-thi-the-next-broker-lan-dau-tien-xuat-hien-tai-acbs-1015000030-B8D0D5827"
+                                                    class="nacbs-title link-news-outstanding  "> CUỘC THI THE NEXT
+                                                    BROKER LẦN ĐẦU TIÊN
+                                                    XUẤT HIỆN TẠI ACBS </a>
+                                                <div class="news-date"> 01/02/2024 </div>
+                                            </li>
+                                            <li class="py-3 "> <a
+                                                    href="/blog-tuyen-dung/chi-tiet/acbs---thanh-vien-tieu-bieu-trong-hoat-dong-luu-ky-chung-khoan-nam-2023--1015000029-BAC1204FF"
+                                                    class="nacbs-title link-news-outstanding  "> ACBS - Thành viên tiêu
+                                                    biểu trong hoạt
+                                                    động lưu ký chứng khoán năm 2023 </a>
+                                                <div class="news-date"> 28/11/2023 </div>
+                                            </li>
+                                            <li class="py-3 "> <a
+                                                    href="/blog-tuyen-dung/chi-tiet/acbs-mui-ne-teambuilding-2023-|-reach-goal---trade-squad-1015000028-B144E2929"
+                                                    class="nacbs-title link-news-outstanding  "> ACBS MUI NE
+                                                    TEAMBUILDING 2023 | REACH
+                                                    GOAL - TRADE SQUAD </a>
+                                                <div class="news-date"> 19/07/2023 </div>
+                                            </li>
+                                            <li class="py-3 "> <a
+                                                    href="/blog-tuyen-dung/chi-tiet/acbs-mui-ne-teambuilding-2023-|-reach-goal---trade-squad-1015000028-B144E2929"
+                                                    class="nacbs-title link-news-outstanding  "> ACBS MUI NE
+                                                    TEAMBUILDING 2023 | REACH
+                                                    GOAL - TRADE SQUAD </a>
+                                                <div class="news-date"> 19/07/2023 </div>
+                                            </li>
+                                            <li class="py-3 "> <a
+                                                    href="/blog-tuyen-dung/chi-tiet/acbs-mui-ne-teambuilding-2023-|-reach-goal---trade-squad-1015000028-B144E2929"
+                                                    class="nacbs-title link-news-outstanding  "> ACBS MUI NE
+                                                    TEAMBUILDING 2023 | REACH
+                                                    GOAL - TRADE SQUAD </a>
+                                                <div class="news-date"> 19/07/2023 </div>
+                                            </li>
+                                        </ul>
+                                        <!-- LOAD MORE BUTTON -->
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-40">
+        <div class="container px-4 px-md-3 text-center">
+            <h2 class="h1 fw-bold text-primary mb-0">
+                Tổng quan<span class="text-primary-2"> thị trường</span>
+            </h2>
+        </div>
+
+    </section>
+    <section>
+        <div class="container">
+            <div class="row layout-total-official-field">
+                <div class="w-100">
+                    <h5 class="text-base text-primary font-semibold w-100">Tiềm năng tăng giá của ngành</h5>
+                    <div class="layout-potential-growth-branch">
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            Thép
+                            <div class="percent-100">
+                                <div class="hundredth-number">
+                                    60%
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-100 d-flex flex flex-wrap w-100 gap-4">
+                    <div class="text-base text-primary font-semibold w-100">Top tiềm năng tăng giá</div>
+                    <div class="layout-potential-price-increase">
+                        <div class="d-flex flex flex-wrap w-176 gap-4 ">
+                            <div class="w-100 ">Mã Cổ phiếu</div>
+                            <div class="w-100">Upside dự kiến</div>
+                        </div>
+                        <div class="w-100 d-flex justify-content-between">
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                            <div class="d-flex flex flex-wrap w-60 gap-4 ">
+                                <div class="w-100 fw-bold">HPG</div>
+                                <div class="w-100 fw-bold text-green">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="py-40">
+        <div class="container">
+            <ul class="nav nav-pills mb-4 navtabs-s1" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#heatmap"   id="heatmap-tab" data-toggle="tab"  aria-controls="heatmap" aria-selected="true"><span
+                            class="AnalysisCenter_Text_14">Heatmap</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#watchlist"  id="watchlist-tab" data-toggle="tab"  aria-controls="watchlist" aria-selected="true"><span
+                            class="AnalysisCenter_Text_15">Watchlist</span></a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="heatmap" role="tabpanel" aria-labelledby="heatmap-tab">
+                    <div id="chart">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab">..safsd.</div>
+                
+              </div>
+        </div>
+        
+    </section>
+     
+    <script src="/Templates/js/popper.min.js"></script>
+    <script src="/Templates/js/bootstrap.min.js"></script>
+    <script src="/Templates/js/simple-scrollbar.min.js"></script>
+    <script src="/Templates/js/swiper-bundle.min.js"></script>
+    <script src="/Templates/js/bootstrap-select.min.js"></script>
+    <script src="/Templates/js/bootstrap-datepicker.min.js"></script>
+    <script src="/Templates/js/bootstrap-datepicker.vi.min.js"></script>
+    <!-- <script defer src="js/counterup.js"></script> -->
+    <script src="/Scripts/index.js"></script>
+    <script src="/Templates/js/main.js"></script>
+    <script src="/Scripts/Apps/app.js?v=2024061713"></script>
+    <script src="/mokupData//get-stock-code.js"></script>
+    <script src="/js/apexcharts.js"></script>
+    <script src="/mokupData/datamapTree.js"></script>
+    <script src="/js/treemap.js"></script>
+</body>
+
+</html>
