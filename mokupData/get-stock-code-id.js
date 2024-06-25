@@ -31,7 +31,7 @@ const getstock_code357 = {
         "item_id": 357,
         "item_code": "NLG",
         "full_name": "NAM LONG INVESTMENT CORPORATION",
-        "full_name_vn": "CTCP DAU TU NAM LONG     ",
+        "full_name_vn": "CTCP DAU TU NAM LONG",
         "profit_margin": 9.66,
         "stock_exchange": "HOSE",
         "current_price": 38950,

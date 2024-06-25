@@ -79,7 +79,7 @@
     grid-template-columns: repeat(4, 252px);
     column-gap: 96px;
     row-gap: 24px;
-    margin: 24px  0px;
+    margin: 24px 0px;
 }
 
 .card-potential-growth-branch {
@@ -92,6 +92,7 @@
     height: 24px;
     border-radius: 4px;
 }
+
 .hundredth-number {
     width: 60%;
     height: 100%;
@@ -106,15 +107,16 @@
 }
 
 .w-176 {
-  width: 176px;
+    width: 176px;
 }
+
 .layout-potential-price-increase {
     width: 100%;
     display: flex;
 }
 
 .w-60 {
- width: 60px;
+    width: 60px;
 }
 
 .text-green {
@@ -122,7 +124,34 @@
 }
 
 .apexcharts-treemap-rect {
-    rx: 0px; /* Bán kính góc bo tròn trên trục x */
-    ry: 0px; /* Bán kính góc bo tròn trên trục y */
-    border-radius: 0px; /* Thêm bán kính góc bo tròn */
-  }
+    rx: 0px;
+    /* Bán kính góc bo tròn trên trục x */
+    ry: 0px;
+    /* Bán kính góc bo tròn trên trục y */
+    border-radius: 0px;
+    /* Thêm bán kính góc bo tròn */
+}
+.layout-show-detailed-stock-information {
+    margin-top: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.card-show-detailed-stock-information {
+    width: 246px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+.font-normal{
+    font-weight: 400;
+
+}
+
+.w-160 {
+    width: 160px;
+}
