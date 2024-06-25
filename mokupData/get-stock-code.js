@@ -30,6 +30,7 @@ const requestgetstockcode = {
                 "current_price": 25950,
                 "target_price": 0,
                 "recommend_date": "18/03/2024",
+                "recommend_status": "HOLD",
                 "mass":14.9
             },
             {
