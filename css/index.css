@@ -131,13 +131,14 @@
     border-radius: 0px;
     /* Thêm bán kính góc bo tròn */
 }
+
 .layout-show-detailed-stock-information {
     margin-top: 26px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    
+
 }
 
 .card-show-detailed-stock-information {
@@ -147,11 +148,32 @@
     flex-wrap: wrap;
     gap: 26px;
 }
-.font-normal{
+
+.font-normal {
     font-weight: 400;
 
 }
 
 .w-160 {
     width: 160px;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item .remove-option {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+}
+.dropdown-item .remove-option {
+    display: none
+}
+
+.filter-option-inner-inner {
+    
 }

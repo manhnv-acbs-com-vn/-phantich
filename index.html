@@ -603,12 +603,12 @@
         <div class="container">
             <ul class="nav nav-pills mb-4 navtabs-s1" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#heatmap" id="heatmap-tab" data-toggle="tab"
+                    <a class="nav-link active map-navigate" id="heatmap-tab" data-toggle="tab"
                         aria-controls="heatmap" aria-selected="true"><span
                             class="AnalysisCenter_Text_14">Heatmap</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#watchlist" id="watchlist-tab" data-toggle="tab"
+                    <a class="nav-link map-navigate" id="watchlist-tab" data-toggle="tab"
                         aria-controls="watchlist" aria-selected="true"><span
                             class="AnalysisCenter_Text_15">Watchlist</span></a>
                 </li>
@@ -616,21 +616,26 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="heatmap" role="tabpanel" aria-labelledby="heatmap-tab">
                     <div id="chart">
-
                     </div>
                     <div class="text-base text-primary font-semibold w-100 fs-5">Thông tin chi tiết mã <span
                             class="btn-link fs-6">(Click vào heatmap bên trên để xem )</span></div>
                     <div id="show-detailed-stock-information" class="w-100">
-
                     </div>
                 </div>
-                <div class="tab-pane fade" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab">..safsd.</div>
+                <div class="tab-pane fade" id="watchlist" role="tabpanel" aria-labelledby="watchlist-tab">
+                     <div>
+                        <div>
 
+                        </div>
+                        <div class="">
+                            <select class="selectpicker form-control-sm show-tick show-menu-arrow bs-select acbs-dropdown style1" id="stock_code" multiple data-live-search="true" title="Thêm mã CP, tên công ty hoặc ngành"  multiple data-max-options="2">               
+                            </select>
+                         </div>
+                     </div>
+                </div>
             </div>
         </div>
-
     </section>
-
     <script src="/Templates/js/popper.min.js"></script>
     <script src="/Templates/js/bootstrap.min.js"></script>
     <script src="/Templates/js/simple-scrollbar.min.js"></script>
@@ -643,9 +648,11 @@
     <script src="/Templates/js/main.js"></script>
     <script src="/Scripts/Apps/app.js?v=2024061713"></script>
     <script src="/mokupData//get-stock-code.js"></script>
+    <script src="/mokupData/arrayMK.js"></script>
     <script src="/mokupData/get-stock-code-id.js"></script>
     <script src="/js/apexcharts.js"></script>
     <script src="/mokupData/datamapTree.js"></script>
+    <script src="/js/analysis.js"></script>
     <script src="/js/treemap.js"></script>
 </body>
 

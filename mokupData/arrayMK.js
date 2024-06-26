@@ -1,4 +1,5 @@
-"result_code": 0,
+let  arrayMK  = {
+  "result_code": 0,
   "data": [
     "A32",
     "AAA",
@@ -253,3 +254,4 @@
     "CACB2305",
     "AAH"
   ]
+}
