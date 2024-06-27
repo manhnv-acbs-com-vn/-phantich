@@ -173,7 +173,53 @@
 .dropdown-item .remove-option {
     display: none
 }
+.select2-container{
+    width: 400px !important;
+    height: 40px;
+    position: relative;
+ 
+    border-image: linear-gradient(0deg, #757575, #757575),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
-.filter-option-inner-inner {
+}
+.select2-container::before{
+    content: "v";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 20px;
     
+    margin: auto 0px;
+    right:5px;
+    z-index: 1;
+}
+
+.select2-container.select2-container--focus::before{
+    content: "P";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 20px;
+    margin: auto 0px;
+    right:5px;
+    z-index: 1;
+}
+.icon-find {
+    width: 40px;
+    height: 40px;
+    background: rgba(33, 33, 33, 0.2);
+    padding: 8px;
+    border-top-left-radius:4px !important;
+    border-bottom-left-radius: 4px !important;
+    
+
+}
+.select2-selection--multiple {
+    height: 100%;
+    border-top-left-radius:0px !important;
+    border-bottom-left-radius: 0px !important;
+    padding: 2px;
 }

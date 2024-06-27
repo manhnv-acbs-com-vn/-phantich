@@ -12,6 +12,7 @@ $(".nav-link").each(function (index, event) {
   })
 });
 
+
 function showListStockCode() {
   let response = arrayMK;
   if (response.result_code == 0) {
@@ -20,24 +21,29 @@ function showListStockCode() {
         $('#stock_code').append(handleOptions(item));
       });
     }
-  }
-
-
+    $('#stock_code').select2({
+      tags: false,
+      maximumSelectionLength: 5, // Set the maximum number of selections
+      allowClear: false, // Cho phép xóa lựa chọn
+      closeOnSelect:true,
+      language: {
+        maximumSelected: function (args) {
+            return 'Bạn đã vượt quá giới hạn';
+        },
+        noResults: function() {
+          return 'Không tìm thấy kết quả phù hợp'; // Custom message for no matching results
+        },
+        searching: function() {
+          return 'Đang tìm kiếm...'; // Custom message for searching
+        },
+    },
+      
+  });
+  } 
 }
 
-$(document).on('click', '.remove-option', function(e) {
-  e.stopPropagation();
-  var optionText = $(this).parent().text().trim();
-  var $select = $(this).closest('.bootstrap-select').find('select');
-  $select.find('option').filter(function() {
-      return $(this).text() === optionText;
-  }).prop('selected', false);
-  $select.selectpicker('refresh');
-});
-
-
 function handleOptions(data) {
-  return `<option value=${data} data-content="<span>${data}<span class='remove-option'>&times;</span></span>"></option>`
+  return `<option value="${data}">${data}</option>`
 
 }
 showListStockCode()

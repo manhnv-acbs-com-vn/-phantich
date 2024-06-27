@@ -13,6 +13,7 @@
     <script src="/Scripts/jquery.cookie.js"></script>
     <script src="/Scripts/jquery.validate.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="/favicon-acbs.png" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109671357-1"></script>
 </head>
@@ -627,9 +628,53 @@
                         <div>
 
                         </div>
-                        <div class="">
-                            <select class="selectpicker form-control-sm show-tick show-menu-arrow bs-select acbs-dropdown style1" id="stock_code" multiple data-live-search="true" title="Thêm mã CP, tên công ty hoặc ngành"  multiple data-max-options="2">               
+                        <div class="d-flex">
+                            <div class="icon-find">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </div>
+                            <select  class="form-control" name="stock_code[]" id="stock_code" multiple="multiple">
+                                <!-- Options will be added here by JavaScript -->
                             </select>
+                         </div>
+                         <div class="mt-3">
+                            <table class="table acbs-table acbs-table-blue table-layout-fixed rounded-1">
+                                <thead class="acbs-table-header rounded-1">
+                                  <tr class="">
+                                    <th scope="col" class="align-middle">Đợt</th>
+                                    <th scope="col" class="align-middle">Thời gian</th>
+                                    <th scope="col" class="align-middle">Phương thức khớp lệnh</th>
+                                    <th scope="col" class="align-middle">Loại lệnh</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row" class="align-middle fw-bold">Khớp lệnh liên tục 1
+              
+                                    </td>
+                                    <td class="align-middle">09h00 – 11h30</td>
+                                    <td class="align-middle">Khớp lệnh liên tục</td>
+                                    <td class="align-middle">LO</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row" class="align-middle fw-bold">Tạm nghỉ
+                                    </td>
+                                    <td class="align-middle">11h30 – 13h00</td>
+                                    <td class="align-middle"></td>
+                                    <td class="align-middle"></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row" class="align-middle fw-bold">Khớp lệnh liên tục 2
+                                    </td>
+                                    <td class="align-middle">13h00 – 15h00</td>
+                                    <td class="align-middle">Khớp lệnh liên tục</td>
+                                    <td class="align-middle">LO</td>
+                                  </tr>
+              
+              
+                                </tbody>
+                              </table>
                          </div>
                      </div>
                 </div>
@@ -643,6 +688,7 @@
     <script src="/Templates/js/bootstrap-select.min.js"></script>
     <script src="/Templates/js/bootstrap-datepicker.min.js"></script>
     <script src="/Templates/js/bootstrap-datepicker.vi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!-- <script defer src="js/counterup.js"></script> -->
     <script src="/Scripts/index.js"></script>
     <script src="/Templates/js/main.js"></script>
