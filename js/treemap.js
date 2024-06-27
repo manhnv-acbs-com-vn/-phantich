@@ -128,7 +128,7 @@ $(document).ready(function () {
       case "SELL":
         return "BÁN";
       case "HOLD":
-        return "GIỮ";
+        return "GIỮ"; 
       default:
         return command;
     }
